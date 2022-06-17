@@ -13,24 +13,30 @@
   </div>
   <section class="first-section">
     <div class="take-input">
-      <input type="number" name="number" id="" value="0">
+      <input  type="number" id="input-number" class="get-input">
     </div>
     <div class="operators-div">
-      <button class="operations" type="button" id="add">+</button>
-      <button class="operations" type="button" id="subtract">-</button>
-      <button class="operations" type="button" id="multiply">*</button>
-      <button class="operations" type="button" id="divide">/</button>
+      <button onclick="addNumber()" class="operations" type="button" id="add">+</button>
+      <button onclick="subtractNumber()" class="operations" type="button" id="subtract">-</button>
+      <button onclick="multiplyNumber()" class="operations" type="button" id="multiply">*</button>
+      <button onclick="divideNumber()" class="operations" type="button" id="divide">/</button>
+      <button onclick="clearAll()" class="operations" type="button" id="divide">AC</button>
     </div>
   </section>
 
   <section class="second-section">
     <div class="math-equation">
-      <p class="calculation">0</p>
+      <p id="calc-expression" class="calculation">0</p>
     </div>
     <div class="result-div">
-      <p class="result"><strong>Result:</strong> 0</p>
+      <p id="result-val" class="result"><strong>Result:</strong> 0</p>
     </div>
   </section>
+
+  <footer class="footer-section">
+    <strong>&copy; Copyright 2022, Faizan Zahid</strong> 
+  </footer>
   
+  <script src="index.js"></script>
 </body>
 </html>
